@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="button">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ФМШ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
     <!--меню-->
     <header class="menu">
-    <h1 class="main__title">Физико-математическая школа</h1>
-    </header>
+      <h1 class="main__title">Физико-математическая школа</h1>
     <ul class="nav__list">
       <li class="nav__list-item">
-          <a class="nav__link" href="#">Главная</a>
+        <a class="nav__link" href="#">Главная</a>
       </li>
       <li class="nav__list-item">
         <a class="nav__link" href="#">Каталог продукции</a>
-    </li>
-    <li class="nav__list-item">
-      <a class="nav__link" href="#">Подбор программы</a>
-  </li>
+      </li>
+      <li class="nav__list-item">
+        <a class="nav__link" href="#">Подбор программы</a>
+      </li>
     </ul>
+  </header>
+  <main>
     <!--главная обложка сайта-->
     <section class="cover">
-    <h2>Функциональное развитие мозга</h2>
-    <h3>Занялся собой? Займись мозгом!</h3>
-    <form>
-      <button class="choose-a-program">подобрать программу</button>
-    </form>
-  </section>
-  <!--первая карточка-->
-  <div class="catalogs">
-    <h2>детокс</h2>
-    <p class="catalogs--description">Ваш мозг забит Tik-Tokom и мемчиками? Вы хотите запомнить что-то еще, но в голове не хватает места? Наша Детокс программа с для вас. Уже через 2 недели вы вздохнете с облегчением!.</p>
-    <p class="catalogs--name">каталог slim</p>
-  </div>
-  <!--вторая карточка-->
-  <div class="catalogs">
-    <h2>набор массы</h2>
-    <p class="catalogs--description">Заработать авторитет среди друзей и коллег по песочнице? Для этого нужно регулярно употреблять продукты, которые разовьют вашу эрудированность и словарный запас!</p>
-    <p class="catalogs--name">каталог pro</p>
-  </div>
-  </body>
+      <h2>Функциональное развитие мозга</h2>
+      <h3>Занялся собой? Займись мозгом!</h3>
+      <form>
+        <button class="choose-a-program">подобрать программу</button>
+      </form>
+    </section>
+    <section class="product-information">
+      <!--первая карточка-->
+      <div class="catalogs">
+        <h2>детокс</h2>
+        <p class="catalogs__description">Ваш мозг забит Tik-Tokom и мемчиками? Вы хотите запомнить что-то еще, но в
+          голове не хватает места? Наша Детокс программа с для вас. Уже через 2 недели вы вздохнете с облегчением!.</p>
+        <p class="catalogs__name">каталог slim</p>
+      </div>
+      <!--вторая карточка-->
+      <div class="catalogs">
+        <h2>набор массы</h2>
+        <p class="catalogs__description">Заработать авторитет среди друзей и коллег по песочнице? Для этого нужно
+          регулярно употреблять продукты, которые разовьют вашу эрудированность и словарный запас!</p>
+        <p class="catalogs__name">каталог pro</p>
+      </div>
+      <!--блок "как это работает"-->
+      <div class="how-it-works">
+        <h2 class="title">Как это работает</h2>
+        <ul class="facts">
+          <li>Функциональное питание содержит только полезную для мозга литературу.</li>
+          <li>Выпускается в виде очень толстых книг, которые нужно лишь прочитать и готово.</li>
+          <li>Замените один-два приема youtube на наше функциональное развитие.</li>
+          <li>Уже через месяц наслаждайтесь изменениями к лучшему вашего мозга</li>
+        </ul>
+      </div>
+      <div class="example">
+        <h2 class="title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16 часов в день.</p>
+        <div class="numbers">
+          <p>50 ЕД</p>
+            <p>повышение IQ</p>
+        </div>
+        <div class="numbers">
+          <p>60 ДНЕЙ</p>
+            <p>затрачено времени</p>
+        </div>
+        <p class="expenses">Затраты на развитие:</p>
+        <p class="expenses">15 000 РУБ.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img src="images/vkontakte.svg" alt="vk icon">
+    <img src="images/youtube.svg" alt="youtube icon">
+    <img src="images/telegram.svg" alt="tg icon">
+    
+    <p class="name-of-school">Физико-математическая школа</p>
+  </footer>
+</body>
+
 </html>
