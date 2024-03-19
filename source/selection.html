@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный макет школы фмш</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="page__body body">
+    <header class="main">
+        <a class="main__logo">
+            <img class="main__logo-image" src="images/logo.svg" width="66" height="77"
+                alt="логотип физико-математической школы">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">открыть меню</button>
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a class="site-list__link" href="index.html">главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html"> каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link">подбор программы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form">
+      <h1 class="visually-hidden">Форма для подбора программы</h1>
+        <h2 class="form__title">Подбор программы</h2>
+        <h3 class="form__text">Заполните анкету, и мы подберем программу развития вашего мозга</h3>
+        <form action="https://fms.sfu-kras.ru/" method="post">
+          <div class="main-info">
+            <div class="main-info__base">
+            <label for="login-field">Имя:*</label>
+            <input type="text" name="login" id="login-field" value="Петечка">
+            <label for="iq-field">IQ:</label>
+            <input type="number" name="iq" id="iq-field" value="7">
+            <label for="age-field">Возраст (лет):</label>
+            <input type="number" name="age" id="age-field" value="7">
+            </div>
+            <div class="main-info__programm">
+              <input type="radio" name="detox" id="detox-field" checked>
+              <label for="detox-field">Детокс</label>
+              <input type="radio" name="weight" id="weight-field">
+              <label for="weight-field">Набор массы</label>
+              <input type="radio" name="additionally" id="additionally-field">
+              <label for="additionally-field">Не знаю (нужен ваш совет)</label>
+            </div>
+          </div>
+          <section class="contacts">
+            <h3 class="contacts__title">Контактные данные (растущего человка)</h3>
+            <label for="mail-field">E-mail:*</label>
+            <input type="text" name="mail" id="mail-field" value="znaikin@gmail.com">
+            <label for="number-field">Телефон:*</label>
+            <input type="text" name="number" id="number-field" value="8 (960) 900-60-90">
+          </section>
+          <section class="comments">
+            <h3 class="comments__title">Комментарий</h3>
+            <textarea name="comment" id="comment-field" rows="9">Расскажите о ваших привычках в получении информации</textarea>
+          </section>
+          <section class="extra">
+            <h3 class="extra__title">Дополнительно</h3>
+            <input type="checkbox" name="sdo" id="sdo-field" checked>
+            <label for="sdo-field">сдо фмш</label>
+            <input type="checkbox" name="library" id="library-field">
+            <label for="library-field">краевая библиотека</label>
+            <input type="checkbox" name="yandex" id="yandex-field">
+            <label for="yandex-field">yandex учебник</label>
+            <input type="checkbox" name="vitamins" id="vitamins-field">
+            <label for="vitamins-field">витамины</label>
+          </section>
+          <input type="submit" value="отправить заявку">
+        </form>
+        <h4 class="subtext">* — Обязательные поля</h4>
+    </main>
+    <footer class="footer">
+      <div class="footer__cooperation">
+        <p class="footer__cooperation-text">приглашаем к сотрудничеству дилеров!</p>
+        <div class="footer__cooperation-address address">
+          <p class="address__house">ул. Борисова дом 5</p>
+          <p class="address__city">г. Красноярск</p>
+        </div>
+      </div>
+      <div class="footer__share share">
+        <div class="share__logotext">
+          <img class="share__logotext-img" src="images/logo_text_footer.svg" width="105" height="58" alt="текстовый логотив фмш">
+        </div>
+        <div class="share__socialnetwork">
+          <a class="share__socialnetwork-vk">
+            <img class="share__socialnetwork-vk-img" src="images/vkontakte.svg" width="28" height="22" alt="ссылка в социальную сеть вконтакте">
+          </a>
+          <a class="share__socialnetwork-yt">
+            <img class="share__socialnetwork-yt-img" src="images/youtube.svg" width="28" height="22" alt="ссылка на ютуб">
+          </a>
+          <a class="share__socialnetwork-tg">
+            <img class="share__socialnetwork-rg-img" src="images/telegram.svg" width="28" height="22" alt="ссылка в социальную сеть телеграм">
+          </a>
+        </div>
+        <div class="share__fms">
+          <p class="share__fms-text">ФИЗИКО-МАТЕМАТИЧЕСКАЯ ШКОЛА</p>
+          <a class="share__fms-logo">
+            <img class="share__fms-logo-img" src="images/fms_logo.svg" width="27" height="32" alt="логотив фмш">
+          </a>
+        </div>
+      </div>
+    </footer>
+</body>
